@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="contact-form/css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="contact-form/css/style.css"> <!-- Resource style -->
+	<script src="contact-form/js/modernizr.js"></script> <!-- Modernizr -->
+
+	<title>Registration Form</title>
+</head>
+<body>
+	<form class="cd-form floating-labels" action="contact.php" method="post">
+		<fieldset>
+			<legend>Team Info</legend>
+
+			<div class="error-message">
+				<p>Red dots are mandatory fields</p>
+			</div>
+
+			<div class="icon">
+				<label class="cd-label" for="cd-name">Team Name</label>
+				<input class="user" type="text" name="cd-tname" id="cd-name" required>
+		    </div>
+
+		    <div class="icon">
+		    	<label class="cd-label" for="cd-company">College</label>
+				<input class="company" type="text" name="cd-college" id="cd-company" required>
+		    </div>
+
+
+		</fieldset>
+
+		<fieldset>
+			<legend>Member Info</legend>
+
+			<div class="icon">
+				<label class="cd-label" for="cd-name">Hacker #1</label>
+				<input class="user" type="text" name="cd-name1" id="cd-name" required>
+		    </div>
+
+            	<div class="icon">
+				<label class="cd-label" for="cd-name">Hacker #2</label>
+				<input class="user" type="text" name="cd-name2" id="cd-name" >
+		    </div>
+
+            	<div class="icon">
+				<label class="cd-label" for="cd-name">Hacker #3</label>
+				<input class="user" type="text" name="cd-name3" id="cd-name" >
+		    </div>
+            <div class="icon">
+				<label class="cd-label" for="cd-name">Hacker #4</label>
+				<input class="user" type="text" name="cd-name4" id="cd-name" >
+		    </div>
+
+<div class="icon">
+		    	<label class="cd-label" for="cd-email">Captain's Email</label>
+				<input class="email error" type="email" name="cd-email" id="cd-email" required>
+		    </div>
+
+
+
+
+
+			<div class="icon">
+				<label class="cd-label" for="cd-textarea">Idea (don't worry if you're not sure) </label>
+      			<textarea class="message" name="cd-textarea" id="cd-textarea" ></textarea>
+			</div>
+
+			<div>
+		      	<input type="submit" value="Submit">
+		    </div>
+		</fieldset>
+	</form>
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>
